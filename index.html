@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>navbar</title>
+</head>
+<body>
+    <div class="toggle"></div>
+    <div class="overlay"></div>
+<div class="menu">
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">team</a></li>
+        <li><a href="#">profile</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+$(document).ready(function(){
+  $('.toggle').click(function(){ 
+    $('.toggle').toggleClass('active')
+    $('.overlay').toggleClass('active')
+    $('.menu').toggleClass('active')
+  })
+})
+</script>
+</body>
+</html>
